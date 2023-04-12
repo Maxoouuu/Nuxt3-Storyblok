@@ -17,6 +17,15 @@
       <div class="line-clamp-4">
         {{ article.description }}
       </div>
+      <div class="mt-3">
+        <span
+          v-for="(tag, index) in article.tag_list"
+          :key="index"
+          class="inline-block bg-[#f5f5f5] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+        >
+          {{ tag }}
+        </span>
+      </div>
     </div>
   </NuxtLink>
 </template>
