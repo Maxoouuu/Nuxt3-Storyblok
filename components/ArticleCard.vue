@@ -13,7 +13,7 @@
       <h2 class="text-2xl text-[#1d243d] font-bold mb-1">
         {{ article.title }}
       </h2>
-      <div class="text-gray-600 mb-3">{{ article.author }}</div>
+      <div class="text-gray-600 mb-3">{{ article.Author }}</div>
       <div class="line-clamp-4">
         {{ article.description }}
       </div>

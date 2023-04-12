@@ -53,8 +53,8 @@ const filteredArticles = computed(() => {
     const content = article.content;
 
     if (filterType.value === "author") {
-      return content.author
-        ? content.author.toLowerCase().includes(searchTerm.value.toLowerCase())
+      return content.Author
+        ? content.Author.toLowerCase().includes(searchTerm.value.toLowerCase())
         : false;
     } else if (filterType.value === "tags") {
       if (!article.tag_list) {
